@@ -1,13 +1,16 @@
 import Phaser from "phaser";
 
+import bg from "../assets/honon_background_square_2.png";
+import ship from "../assets/playerShip1_blue.png";
+
 export default class GameScene extends Phaser.Scene {
   constructor() {
     super("GameScene");
   }
 
   preload() {
-    this.load.image("background", "./src/assets/honon_background_square_2.png");
-    this.load.image("ship", "./src/assets/playerShip1_blue.png");
+    this.load.image("background", bg);
+    this.load.image("ship", ship);
   }
 
   // function create() {
