@@ -145,8 +145,6 @@ export default class GameScene extends Phaser.Scene {
     this.bg.tilePositionX = this.cameras.main.scrollX * 0.3;
     // this.bg.tilePositionY = this.cameras.main.scrollY * .3;
 
-    console.log(this.ship.y);
-
     if (this.ship.y < 500) {
       this.cameras.main.setBackgroundColor("#34B4DB");
     } else {
