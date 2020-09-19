@@ -13,46 +13,6 @@ export default class GameScene extends Phaser.Scene {
     this.load.image("ship", ship);
   }
 
-  // function create() {
-  //   // Create a tilesprite (x, y, width, height, key)
-  //   let tileSprite = this.add.tileSprite(
-  //     0,
-  //     0,
-  //     window.innerWidth,
-  //     window.innerHeight,
-  //     "honon_background_1"
-  //   );
-
-  //   // Phaser supports multiple cameras, but you can access the default camera like this:
-  //   const camera = this.cameras.main;
-
-  //   // Set up the arrows to control the camera
-  //   const cursors = this.input.keyboard.createCursorKeys();
-  //   controls = new Phaser.Cameras.Controls.FixedKeyControl({
-  //     camera: camera,
-  //     left: cursors.left,
-  //     right: cursors.right,
-  //     up: cursors.up,
-  //     down: cursors.down,
-  //     speed: 0.5
-  //   });
-
-  //   // Help text that has a "fixed" position on the screen
-  //   this.add
-  //     .text(16, 16, "Arrow keys to scroll", {
-  //       font: "18px monospace",
-  //       fill: "#ffffff",
-  //       padding: { x: 20, y: 10 },
-  //       backgroundColor: "#000000"
-  //     })
-  //     .setScrollFactor(0);
-  // }
-
-  // function update(time, delta) {
-  //   // Apply the controls to the camera each update tick of the game
-  //   controls.update(delta);
-  // }
-
   create() {
     /**
      *
@@ -62,8 +22,6 @@ export default class GameScene extends Phaser.Scene {
      *  backdrops using seamless textures as a source.
      *
      **/
-    // Create a tilesprite (x, y, width, height, key)
-    // tileSprite = this.add.tileSprite(400, 300, game.width, game.height, 'background');
 
     // You can access the game's config to read the width & height
     const { width, height } = this.sys.game.config;
